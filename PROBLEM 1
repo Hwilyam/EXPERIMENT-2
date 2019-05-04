@@ -1,0 +1,68 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	int a;
+	int b;
+	int c;
+	
+	cout << "Welcome to Bloge an internet service provider!"<<endl; 
+	cout << " "<<endl;
+	cout << " "<<endl;
+	cout << "----------------------------------------------"<<endl;
+	
+	cout << "Please Choose your Package"<<endl;
+	cout << "1.Package A:For P995/mo 10hrs of access are provided. Additional hours are P20/hr"<<endl;
+	cout << "2.Package B:For P1495/mo 20hrs of access are provided. addtional hours are P10/hr"<<endl;
+	cout << "3.Package C:For P1995/mo of unlimited access is provided."<<endl;
+	cout << " "<<endl;
+	cout << "Please input the Package number:     "; cin>>a;
+    cout << "Please input total hours to be used: "; cin>>b;
+	cout << " "<<endl;
+	cout << "---------------------------------------------- "<<endl;
+
+	if (a==1)
+	{
+		if  (b <= 10)
+		{
+			cout <<"Total Amount Due: P995";
+		}
+		else
+		{
+			c = (b-10) * 20 + 995;	
+			cout <<"Total Amount Due: "<< c;
+		}
+	
+	}
+	else if (a==2)
+	{
+		if  (b <= 20)
+		{
+			cout <<"Total Amount Due: P1495";
+		}
+		else
+		{
+			c = (b-20) * 10 + 1495;
+			cout <<"Total Amount Due: "<< c;
+		}
+	}
+	else if (a==3)
+	{
+		c = 1995;
+		cout <<"Total Amount Due: "<< c;
+	}
+	else 
+	{
+		cout <<"Invalid Package"<<endl;
+	}
+	
+	cout <<" "<<endl;
+	cout <<" "<<endl;
+	
+	
+	return 0;
+	
+}
