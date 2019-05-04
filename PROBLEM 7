@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main ()
+{
+	int a, b;
+	cout << "                                Sum of All"<<endl;
+	cout << "--------------------------------------------------------------------------------"<<endl;
+
+	back:
+	b=0;
+
+	cout << " "<<endl;
+	cout << " "<<endl;
+	cout << "Enter a number: ";cin>>a;
+	
+	for (int i=1; i<=a; i++)
+	{
+		b = b + i;
+	}
+	
+	cout << "The sum of all whole numbers from 1 to " << a << " is: " << b;
+	goto back;
+
+	_getch ();
+	return 0;
+}
