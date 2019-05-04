@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cmath>
+#include <conio.h>
+
+using namespace std; 
+
+int main ()
+{
+	int x;
+	double v, y, z;
+	v = 0;
+	z = 2.5;
+	
+	cout << "                               CALCUATING THE V"<<endl;
+	cout << " "<<endl;
+	cout << "-----------------------------------------------------------------------------"<<endl;
+	cout << "X = 1 or X = 2"<<endl;
+	cout << "Enter 1 and 2 for x value for special equation"<<endl;
+	cout << " "<<endl;
+	cout << "-----------------------------------------------------------------------------"<<endl;
+	cout << "Enter Your X Value: ";cin>>x;
+	cout << " "<<endl;	
+	cout << "Enter Your Y Value: ";cin>>y;
+	cout << " "<<endl;
+	cout << "---------------------------------------------------------------------------- "<<endl;
+	cout << " "<<endl;
+	switch (x)
+	{
+		case 1:
+			if (x == 1 && y > 1 && y < 5 )
+				{
+					v = x*y*z;
+					cout << "V = " << v<<endl;
+				}
+			else if (x == 1 && y >= 5)
+				{
+					v = ((x+y)/z);
+					cout << "V = " << v <<endl;
+				}
+			break;	
+		case 2:
+			if (x == 2 && y <= 5)
+				{
+					v = (x-y)/z;
+					cout << "V = " << v <<endl;
+				}
+			else if (x ==2 && y > 5)
+				{
+					v = x-(sqrt (y+z));
+					cout << "V = " << v <<endl;
+				}
+			break;
+		default:
+			v = x+y+z;
+			cout << "V = " << v <<endl;
+	}
+	_getch ();
+	return 0;
+}
