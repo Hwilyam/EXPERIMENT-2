@@ -1,0 +1,26 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main ()
+{
+	int a;
+	
+	cout <<"                              MULTIPLICATION TABLE"<<endl;
+	cout <<"--------------------------------------------------------------------------------"<<endl;
+	cout <<" "<<endl;
+	cout <<" "<<endl;	
+	
+	cout <<"Enter A Number: ";cin>>a; 		
+	cout <<"Multiplication table of "<< a <<":"<<endl;	
+	cout <<" "<<endl;
+
+	for (int i = 1; i<=10; i++)
+	{
+		cout << a << " x " << i << " = " << (a*i)<<endl;
+	}
+		 	
+	_getch ();
+	return 0;
+}
