@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main ()
+{
+	double a, b, c, d; 
+	d = 1.10;
+	 
+	cout << "                        BILL OF THE WATER - WATER BILL!" <<endl;
+	cout << "-----------------------------------------------------------------------------"<<endl;
+	
+	cout << "Gallons of Water Consumed Last Month: ";cin>>a;  
+	cout << "Gallons of Water Recently Consumed: ";cin>>b;	
+	cout << "Unpaid Balance: ";cin >> c;
+	cout << " "<<endl;
+	cout << "-----------------------------------------------------------------------------"<<endl;
+	 
+		if (c > 0)
+		{
+			cout << "Your Balance last month is: " << (d*(a)) + 35<< " php" <<endl;
+			cout << "-----------------------------------------------------------------------------"<<endl;
+			cout << "Since you did not pay all of your balance "<< c + 20  <<"php was added for this month."<<endl;
+			cout << " "<<endl;
+			cout << "Your Balance For this Month Is: "<< (d*(b)) + 35 + 20 + c << " php" <<endl;
+		}
+		else 
+		{
+			cout << "Your Balance last month is: " << (d*(a)) + 35<< " php" <<endl;
+			cout << "Your Balance For this Month Is: "<< (d*(b)) + 35<< " php" <<endl;
+		}
+	_getch ();
+	return 0;
+}
