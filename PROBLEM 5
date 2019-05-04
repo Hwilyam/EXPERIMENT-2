@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main ()
+{
+	int x;
+	x =1;
+	
+	cout << "                                 Counting to 30" << endl;
+	cout << "--------------------------------------------------------------------------------"<<endl;
+	cout << " "<<endl;
+	
+	for (int i = 1; i <=20; i++)
+		{
+			if (x < 10)
+			{
+				cout << x++ << ", ";
+			}
+			else if ( x >= 10 & x <30 )
+			{
+				cout << " " << x << ", ";
+				x= x + 2;
+			}
+				else
+			{
+				cout << x << endl;
+			}			
+		}
+	_getch ();
+	return 0;
+}
