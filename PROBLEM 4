@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main ()
+{
+	int a, b, c;
+	
+	cout << "                            THE LARGEST OF THEM ALL"<<endl;
+	cout << " "<<endl;
+	cout << "-----------------------------------------------------------------------------"<<endl;
+	
+	cout << "Enter First Number: ";cin>> a; 
+	cout << "Enter Second Number: ";cin>> b; 
+	cout << "Enter Third Number: ";cin>> c;
+	cout << " "<<endl; 
+	cout << "-------------------------------------------------------" << endl;
+	
+		if (a > b && a > c)
+			{		
+				cout << "The LARGEST of the three numbers is: " << a << endl;
+			}
+		else if (b > a && b > c)
+			{
+				cout << "The LARGEST of the three numbers is: " << b << endl;
+			}
+		else if (c > a && c > a)
+			{
+				cout << "The LARGEST of the three numbers is: " << c << endl;
+			}
+	
+	_getch ();
+	return 0;
+}
